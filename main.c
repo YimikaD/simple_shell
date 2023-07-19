@@ -10,9 +10,8 @@
 
 int main(int ac, char **av, char **env)
 {
-        int start;
+	int status;
 
-        start = ss_shell(ac, av, env);
-
-        return (start);
+	status = ss_shell(ac, av, env);
+	return (status);
 }
