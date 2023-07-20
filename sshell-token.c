@@ -71,5 +71,6 @@ char **total_tokenize(char *src, char **av)
 		token = strtok(NULL, delim);
 		i++;
 	}
-	t[l] = NULL, return (t);
+	t[l] = NULL;
+		return (t);
 }

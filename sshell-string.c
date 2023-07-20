@@ -17,7 +17,7 @@ char *_strcat(char *str1, const char *str2)
 
 	while (*str2_t != '\0')
 	{
-		*str1_t++ == *str2_t++;
+		*str1_t++ = *str2_t++;
 	}
 
 	*str1_t = '\0';

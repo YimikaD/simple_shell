@@ -47,5 +47,6 @@ void _executeshell(char **t, char **av, char **env)
 	{
 		do {
 			waitpid(ourpid, &stat, WUNTRACED);
-		}
-		while { (!WIFEXITED(stat) && !WIFSIGNALED(stat)); } } }
+		} while (!WIFEXITED(stat) && !WIFSIGNALED(stat));
+	}
+}

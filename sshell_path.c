@@ -47,7 +47,10 @@ int _thepath(char **t, char **env)
 			t[0] = c;
 			free(path_cpy);
 			return (1);
-		} free(c), d = strtok(NULL, ":"); }
-	free(path_cpy)
+		}
+		free(c);
+		d = strtok(NULL, ":");
+	}
+	free(path_cpy);
 	       	return (0);
 }
