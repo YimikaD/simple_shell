@@ -20,6 +20,7 @@ int _thepath(char **t, char **env);
 char *get_env(char **env, char *data);
 void print_environ(char **env);
 void free_up(char **up);
+int check_exit(char **t, char **env);
 void shell_exit(char **t);
 
 /*utili functions*/
